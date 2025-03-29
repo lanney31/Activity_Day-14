@@ -4,16 +4,14 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home Screen</Text>
+      <Text style={styles.title}>RED</Text>
       
       <Button 
-        title="Go to Details" 
-        onPress={() => navigation.navigate('Details')} 
+        title="Go to Home" 
+        onPress={() => navigation.navigate('Home')} 
       />
 
-      <View style={styles.space} />
-
-      <Button 
+<Button 
         title="Green" 
         onPress={() => navigation.navigate('Green')} 
         color="green"
@@ -30,8 +28,8 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate('Red')} 
         color="red"
       />
+
     </View>
-      
   );
 };
 
@@ -40,7 +38,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f8f9fa',
+    backgroundColor: 'red',
   },
   title: {
     fontSize: 24,
@@ -53,4 +51,3 @@ const styles = StyleSheet.create({
 });
 
 export default HomeScreen;
-
